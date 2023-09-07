@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Notes":"npx json-server --watch notes.json",
+    "Todos": "npx json-server --watch todos.json",
+    "Add to branch": "git add *",
+    "Do commit update":"git commit -m 'Update'",
+    "Upload commit":"git push"
   },
   "repository": {
     "type": "git",
