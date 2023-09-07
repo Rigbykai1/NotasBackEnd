@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "Notes":"npx json-server --watch notes.json",
-    "Todos": "npx json-server --watch todos.json",
+    "Notes": "node Notes.js",
+    "Todos": "node Todos.js",
     "Add to branch": "git add *",
-    "Do commit update":"git commit -m 'Update'",
-    "Upload commit":"git push"
+    "Do commit update": "git commit -m 'Update'",
+    "Upload commit": "git push"
   },
+  "proxy": "http://localhost:3000",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rigbykai1/NotasBackEnd.git"
@@ -23,6 +23,8 @@
   "homepage": "https://github.com/Rigbykai1/NotasBackEnd#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "uuid": "^9.0.0"
   }
 }
