@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "Server": "nodemon index.js",
+    "Server": "nodemon app.js",
     "Add to branch": "git add *",
     "Do commit update": "git commit -m 'Update'",
     "Upload commit": "git push"
