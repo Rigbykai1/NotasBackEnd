@@ -1,6 +1,37 @@
 {
+  "name": "notasbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Server": "nodemon app.js",
+    "Add to branch": "git add *",
+    "Do commit update": "git commit -m 'Update'",
+    "Upload commit": "git push"
+  },
+  "proxy": "http://localhost:3000",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rigbykai1/NotasBackEnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rigbykai1/NotasBackEnd/issues"
+  },
+  "homepage": "https://github.com/Rigbykai1/NotasBackEnd#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "mongoose-unique-validator": "^4.0.0"
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^7.5.0",
+    "mongoose-unique-validator": "^4.0.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "nodemon": "^3.0.1"
   }
 }
