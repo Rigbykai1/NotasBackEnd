@@ -29,5 +29,10 @@ app.use("/api/users", usersRouter);
 
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  logger.info(`Server running on port ${PORT}`);
+});
 
 module.exports = app;
